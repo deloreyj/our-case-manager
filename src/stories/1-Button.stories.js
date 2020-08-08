@@ -15,25 +15,25 @@ export default {
 };
 
 export const CTA = () => (
-  <Button variant="cta" onClick={action("clicked")}>
+  <Button variant="cta" onPress={action("clicked")}>
     I Call Thee To Action!
   </Button>
 );
 
 export const Negative = () => (
-  <Button variant="negative" onClick={action("clicked")}>
+  <Button variant="negative" onPress={action("clicked")}>
     Be Careful!
   </Button>
 );
 
 export const Primary = () => (
-  <Button variant="primary" onClick={action("clicked")}>
+  <Button variant="primary" onPress={action("clicked")}>
     Primary
   </Button>
 );
 
 export const Secondary = () => (
-  <Button variant="secondary" onClick={action("clicked")}>
+  <Button variant="secondary" onPress={action("clicked")}>
     Secondary
   </Button>
 );

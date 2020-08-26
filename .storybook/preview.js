@@ -1,15 +1,14 @@
-import "./Firebase";
 import React from "react";
 import { Provider, defaultTheme } from "@adobe/react-spectrum";
 
-import CasesPage from './components/CasesPage';
-
-function App() {
-  return (
+export const decorators = [
+  (Story) => (
     <Provider theme={defaultTheme} colorScheme="light">
-      <CasesPage />
+      <Story />
     </Provider>
-  );
-}
+  ),
+];
 
-export default App;
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+};

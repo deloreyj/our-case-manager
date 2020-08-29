@@ -1,12 +1,15 @@
 import React from 'react';
-import CasesPage from './CasesPage';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import CasesPage, { CasesPageProps } from './CasesPage';
 
 export default {
   title: 'Components/CasesPage',
   component: CasesPage,
-}
+} as Meta;
 
-const Template = (args) => <CasesPage {...args} />;
+const Template: Story<CasesPageProps> = (args) => <CasesPage {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { /* place props here */ };
+Default.args = {
+  /* place props here */
+};

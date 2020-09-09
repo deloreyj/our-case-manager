@@ -2,7 +2,7 @@ import "./Firebase";
 import React from "react";
 import { Provider, defaultTheme } from "@adobe/react-spectrum";
 
-import CasesPage from './components/CasesPage';
+import CasesPage from "./components/CasesPage/CasesPage";
 
 function App() {
   return (

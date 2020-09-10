@@ -51,6 +51,7 @@
     "@storybook/react": "^6.0.16",
     "babel-loader": "^8.1.0",
     "plop": "^2.7.4",
+    "prettier": "^2.1.1",
     "react-is": "^16.13.1"
   }
 }

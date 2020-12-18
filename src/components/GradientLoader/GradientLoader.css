@@ -1,0 +1,31 @@
+.GradientLoaderBase {
+	background: linear-gradient(90deg, #5a5a5a, #3a3a3a, #5a5a5a, #3a3a3a, #5a5a5a, #3a3a3a, #5a5a5a);
+	background-size: 300% 100%;
+	animation: gradient 9s linear infinite;
+	border-radius: 5px;
+}
+.GradientLoader {
+	flex-grow: 1;
+}
+
+.GradientLoaderFitParent {
+	display: block;
+	overflow: auto;
+	height: 100%;
+}
+
+.GradientLoaderFitChild {
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 50% 0%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}

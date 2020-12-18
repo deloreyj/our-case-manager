@@ -7,10 +7,12 @@ export default {
   component: GradientLoader,
 } as Meta
 
-const Template: Story<GradientLoaderProps> = (args) => <GradientLoader {...args} />;
-
-export const Default = Template.bind({});
-Default.args = { 
-  height: 50,
+export const SpecifiedSize = (args: GradientLoaderProps) => <GradientLoader {...args} />;
+SpecifiedSize.args = { 
+  height: 200,
   width: 200,
- };
+};
+
+export const GrowToFit = (args: GradientLoaderProps) => {
+  return <div style={{height: 45, width: 400}}><GradientLoader {...args} /></div>;
+};
